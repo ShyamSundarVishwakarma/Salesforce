@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <lightning-input
+            label="Number of record"
+            title="Number of record"
+            type="number"
+            onchange={setcount}>
+        </lightning-input>
+    </lightning-card>
+
+    <template if:true={account}>
+        <template for:each={account} for:item="account">
+            <lightning-card key={account.Id} title={account.Name}>
+                <p class="slds-p-horizontal_small">
+                    Annual Revenue: {account.AnnualRevenue}
+                </p>
+            </lightning-card>
+        </template>
+    </template>
+</template>

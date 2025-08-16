@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="record edit form demo">
+        <lightning-record-edit-form object-api-name={objectApiName} onsuccess={handleSuccess} destiny="Compact">
+            <lightning-input-field field-name="Id" value={AccountId}></lightning-input-field>
+
+             <lightning-input-field field-name={namefield} ></lightning-input-field>
+              <lightning-input-field field-name={industryfield} ></lightning-input-field>
+
+              <lightning-button variant="brand" label="submit" type="submit"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

@@ -1,0 +1,68 @@
+<template>
+    <!-- <div class="slds-from-element">
+        <label class="slds-from-element_lebel" for="text-input-id-47">
+            <abbr class="slds=required" title="required">*</abbr> Name
+        </label>
+        <div class="slds-form-elemnt-control">
+            <input type="text" id="text-input-id-47" placeholder="placeholder text_" required="" class="namefield"/>
+        
+
+        </div>
+    </div>
+
+    <div class="slds-from-element">
+        <label class="slds-from-element_lebel" for="text-input-id-47">
+            <abbr class="slds=required" title="required">*</abbr> Age
+        </label>
+        <div class="slds-form-elemnt-control">
+            <input type="number" id="text-input-id-48" placeholder="placeholder text_" required="" class="namefield"/>
+        </div>
+    </div>
+    <button class="slds-button slds-button_brand">Submit</button> -->
+
+    <!-- <div class="slds-box" style="background-color :white">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size6-of12">
+                <div class="slds-from-element">
+        <label class="slds-from-element_lebel" for="text-input-id-47">
+            <abbr class="slds=required" title="required">*</abbr> Name
+        </label>
+        <div class="slds-form-elemnt-control">
+            <input type="text" id="text-input-id-47" placeholder="placeholder text_" required="" class="namefield"/>
+         </div>
+    </div>
+            </div>
+              <div class="slds-col slds-size6-of12">
+                  <div class="slds-from-element">
+        <label class="slds-from-element_lebel" for="text-input-id-47">
+            <abbr class="slds=required" title="required">*</abbr> Age
+        </label>
+        <div class="slds-form-elemnt-control">
+            <input type="number" id="text-input-id-48" placeholder="placeholder text_" required="" class="namefield"/>
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size12-of12 slds-align_absolute-center">
+                 <button class="slds-button slds-button_brand">Submit</button> 
+            </div>
+            </div>
+       </div> -->
+
+       <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_6-of-12">
+<lightning-input type="text" label="Name"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+            <lightning-input type="number" label="Age"></lightning-input>
+        </div>
+          <div class="slds-col slds-size_12-of-12 slds-align_absolute-center">
+<lightning-button variant="brand" label="Submit" title="Title" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+          </div>
+       </div>
+
+
+  
+
+</template>
