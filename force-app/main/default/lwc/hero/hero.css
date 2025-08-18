@@ -1,0 +1,50 @@
+img{
+    width: auto;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;;
+}
+.hero-left{
+    padding-left: 50px;
+
+}
+.hero-left h1{
+    font-size: 32px;
+}
+.hero-left p{
+    font-size: 16px;
+}
+.hero-left button{
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+.hero-right img{
+    max-width: 30vw;
+}
+@media only screen and (min-device-width:320px) and (max-device-width:480px){
+    .hero-right img{
+        margin-top: 20px;
+    max-width: 100vw;
+}
+.hero-left p{
+   text-align: center;
+}
+.hero-left{
+    padding-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+}
