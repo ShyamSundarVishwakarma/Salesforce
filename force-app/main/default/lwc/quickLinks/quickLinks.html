@@ -3,9 +3,9 @@
         <h1 class="slds-text-align_center"> Quick Links</h1>
         <div class="slds-grid slds-wrap">
             <template for:each={data} for:item="quickLinks">
-            <div class="slds-col image_section slds-align_absolute-center slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12" key={quickLinks.id} onclick={handleClick}>
-                <img src={quickLinks.image}/>
-                <div class="overlay"></div>
+            <div class="slds-col image_section slds-align_absolute-center slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12" key={quickLinks.id} data-id={quickLinks.id} onclick={handleClick}>
+                <img src={quickLinks.image} data-id={quickLinks.id} />
+                <div class="overlay" data-id={quickLinks.id}></div>
                 <div class="title_class slds-text-align_center">{quickLinks.text}</div>
             </div>
             </template>

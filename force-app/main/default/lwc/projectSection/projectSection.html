@@ -1,0 +1,37 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium">
+        <lightning-layout multiple-rows>
+     
+            <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div class="project_title">
+                    <h1>Project</h1>
+                    <template if:true={projectData}>
+                        <lightning-accordion>
+                            <template for:each={projectData} for:item="project">
+                                <lightning-accordion-section key={project.id} name={project.name} label={project.name}>
+                                    <div class="slds-m-top_small">
+                                        <p class="para_text">{project.description}</p>
+                                        <p class="para_text slds-p-top_medium">
+                                            <strong>Technology :</strong> {project.technology}
+                                        </p>
+                                        <p if:true={project.website} class="para_text slds-p-top_medium">
+                                            <strong>Website :</strong>
+                                            <a target="_blank" href={project.website}>{project.website}</a>
+                                        </p>
+                                    </div>
+                                </lightning-accordion-section>
+                            </template>
+                        </lightning-accordion>
+                    </template>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div class="slds-p-around_medium image_section">
+                    <img src={projectImage}/>
+                </div>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </div>
+</template>

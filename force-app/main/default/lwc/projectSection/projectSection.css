@@ -1,0 +1,22 @@
+.project_title{
+    margin-top: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid #A020f0;
+    border-bottom-width: thick;
+    width: 15%;
+
+}
+.image_section{
+    width: 80%;
+}
+.project_title h1{
+    font-size: 30px;
+    font-weight: 600;
+    columns: #333;
+}
+.para_text{
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 300;
+ 
+}
